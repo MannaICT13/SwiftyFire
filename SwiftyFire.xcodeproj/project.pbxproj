@@ -12,9 +12,12 @@
 		BE7821F122CEB0FE0094F036 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE7821EF22CEB0FE0094F036 /* Main.storyboard */; };
 		BE7821F322CEB0FF0094F036 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE7821F222CEB0FF0094F036 /* Assets.xcassets */; };
 		BE7821F622CEB0FF0094F036 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE7821F422CEB0FF0094F036 /* LaunchScreen.storyboard */; };
+		DC24001F441AFB768C176171 /* Pods_SwiftyFire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC7B437E7D7B9D9D2C8C3ECB /* Pods_SwiftyFire.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		77F93A9D2714BE53C5B4A786 /* Pods-SwiftyFire.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftyFire.release.xcconfig"; path = "Target Support Files/Pods-SwiftyFire/Pods-SwiftyFire.release.xcconfig"; sourceTree = "<group>"; };
+		9CDEB9B61C83B6E393DA10D1 /* Pods-SwiftyFire.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftyFire.debug.xcconfig"; path = "Target Support Files/Pods-SwiftyFire/Pods-SwiftyFire.debug.xcconfig"; sourceTree = "<group>"; };
 		BE7821E822CEB0FE0094F036 /* SwiftyFire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftyFire.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE7821EB22CEB0FE0094F036 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BE7821ED22CEB0FE0094F036 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		BE7821F222CEB0FF0094F036 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BE7821F522CEB0FF0094F036 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BE7821F722CEB0FF0094F036 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC7B437E7D7B9D9D2C8C3ECB /* Pods_SwiftyFire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftyFire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC24001F441AFB768C176171 /* Pods_SwiftyFire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		30AB99B646CA6078968F2B87 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CC7B437E7D7B9D9D2C8C3ECB /* Pods_SwiftyFire.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A2E5C6C61E39293FEC872BC8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9CDEB9B61C83B6E393DA10D1 /* Pods-SwiftyFire.debug.xcconfig */,
+				77F93A9D2714BE53C5B4A786 /* Pods-SwiftyFire.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		BE7821DF22CEB0FE0094F036 = {
 			isa = PBXGroup;
 			children = (
 				BE7821EA22CEB0FE0094F036 /* SwiftyFire */,
 				BE7821E922CEB0FE0094F036 /* Products */,
+				A2E5C6C61E39293FEC872BC8 /* Pods */,
+				30AB99B646CA6078968F2B87 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +96,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BE7821FA22CEB0FF0094F036 /* Build configuration list for PBXNativeTarget "SwiftyFire" */;
 			buildPhases = (
+				4FE74A35321832581790A147 /* [CP] Check Pods Manifest.lock */,
 				BE7821E422CEB0FE0094F036 /* Sources */,
 				BE7821E522CEB0FE0094F036 /* Frameworks */,
 				BE7821E622CEB0FE0094F036 /* Resources */,
+				6BC88CBE66B83EFE09D9B208 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +156,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4FE74A35321832581790A147 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwiftyFire-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6BC88CBE66B83EFE09D9B208 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftyFire/Pods-SwiftyFire-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftyFire/Pods-SwiftyFire-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SwiftyFire/Pods-SwiftyFire-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BE7821E422CEB0FE0094F036 /* Sources */ = {
@@ -280,6 +349,7 @@
 		};
 		BE7821FB22CEB0FF0094F036 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9CDEB9B61C83B6E393DA10D1 /* Pods-SwiftyFire.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +368,7 @@
 		};
 		BE7821FC22CEB0FF0094F036 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77F93A9D2714BE53C5B4A786 /* Pods-SwiftyFire.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
