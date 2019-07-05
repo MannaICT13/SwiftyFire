@@ -15,8 +15,13 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-    @IBAction func btnClickAction(_ sender: Any) {
-    }
     
 }
+
+
+
+
+
+
+
 
