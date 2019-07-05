@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE399A8322CF8E330087541F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BE399A8222CF8E330087541F /* GoogleService-Info.plist */; };
 		BE7821EC22CEB0FE0094F036 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7821EB22CEB0FE0094F036 /* AppDelegate.swift */; };
 		BE7821EE22CEB0FE0094F036 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7821ED22CEB0FE0094F036 /* ViewController.swift */; };
 		BE7821F122CEB0FE0094F036 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE7821EF22CEB0FE0094F036 /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 /* Begin PBXFileReference section */
 		77F93A9D2714BE53C5B4A786 /* Pods-SwiftyFire.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftyFire.release.xcconfig"; path = "Target Support Files/Pods-SwiftyFire/Pods-SwiftyFire.release.xcconfig"; sourceTree = "<group>"; };
 		9CDEB9B61C83B6E393DA10D1 /* Pods-SwiftyFire.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftyFire.debug.xcconfig"; path = "Target Support Files/Pods-SwiftyFire/Pods-SwiftyFire.debug.xcconfig"; sourceTree = "<group>"; };
+		BE399A8222CF8E330087541F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BE7821E822CEB0FE0094F036 /* SwiftyFire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftyFire.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE7821EB22CEB0FE0094F036 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BE7821ED22CEB0FE0094F036 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,7 +56,6 @@
 				9CDEB9B61C83B6E393DA10D1 /* Pods-SwiftyFire.debug.xcconfig */,
 				77F93A9D2714BE53C5B4A786 /* Pods-SwiftyFire.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -85,6 +86,7 @@
 				BE7821F222CEB0FF0094F036 /* Assets.xcassets */,
 				BE7821F422CEB0FF0094F036 /* LaunchScreen.storyboard */,
 				BE7821F722CEB0FF0094F036 /* Info.plist */,
+				BE399A8222CF8E330087541F /* GoogleService-Info.plist */,
 			);
 			path = SwiftyFire;
 			sourceTree = "<group>";
@@ -150,6 +152,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE7821F622CEB0FF0094F036 /* LaunchScreen.storyboard in Resources */,
+				BE399A8322CF8E330087541F /* GoogleService-Info.plist in Resources */,
 				BE7821F322CEB0FF0094F036 /* Assets.xcassets in Resources */,
 				BE7821F122CEB0FE0094F036 /* Main.storyboard in Resources */,
 			);
